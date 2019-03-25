@@ -28,6 +28,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
+import sys
 import six
 
 six_classifiers = [
@@ -43,7 +44,7 @@ six_classifiers = [
 with open("README.rst", "r") as fp:
     six_long_description = fp.read()
 
-setup(name="six",
+setup(name="python3-six" if sys.argv[1] == "bdist_rpm" else "six",
       version=six.__version__,
       author="Benjamin Peterson",
       author_email="benjamin@python.org",

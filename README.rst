@@ -14,6 +14,11 @@
    :target: https://github.com/benjaminp/six/blob/master/LICENSE
    :alt: MIT License badge
 
+.. note::
+
+    This fork is just to enable building an RPM package for SailfishOS. 
+    Run `python3 setup.py bdist_rpm` to build a SailfishOS package.
+
 Six is a Python 2 and 3 compatibility library.  It provides utility functions
 for smoothing over the differences between the Python versions with the goal of
 writing Python code that is compatible on both Python versions.  See the
